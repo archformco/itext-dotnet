@@ -21,7 +21,7 @@
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-#if !NETSTANDARD2_0
+#if !NETSTANDARD2_0 && !NETSTANDARD2_1
 
 using System;
 using System.Drawing;

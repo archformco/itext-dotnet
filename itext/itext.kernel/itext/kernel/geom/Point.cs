@@ -22,6 +22,8 @@ using System;
 using iText.Commons.Utils;
 using iText.IO.Util;
 
+using HashCode = iText.IO.Util.HashCode;
+
 namespace iText.Kernel.Geom {
     /// <summary>Class that represent point object with x and y coordinates.</summary>
     public class Point

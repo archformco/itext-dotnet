@@ -32,6 +32,8 @@ using iText.StyledXmlParser.Css.Font;
 using iText.Svg.Css.Impl;
 using iText.Svg.Processors.Impl;
 
+using Range = iText.Layout.Font.Range;
+
 namespace iText.Svg.Processors.Impl.Font {
     /// <summary>Class that processes and add resolved css fonts to the FontProvider</summary>
     public class SvgFontProcessor {

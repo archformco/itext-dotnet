@@ -32,6 +32,8 @@ using iText.StyledXmlParser.Css;
 using iText.StyledXmlParser.Css.Parse;
 using iText.StyledXmlParser.Node;
 
+using Range = iText.Layout.Font.Range;
+
 namespace iText.StyledXmlParser.Css.Util {
     /// <summary>Utilities class for CSS operations.</summary>
     public class CssUtils {

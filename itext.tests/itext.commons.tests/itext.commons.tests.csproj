@@ -3,9 +3,7 @@
     <SignAssembly>True</SignAssembly>
     <DelaySign>False</DelaySign>
     <WarningLevel>0</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup>
-    <TargetFrameworks>netcoreapp2.0;net461</TargetFrameworks>
+    <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(TargetFramework)' == 'net461' ">
     <OutputType>library</OutputType>

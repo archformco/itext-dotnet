@@ -26,6 +26,8 @@ using System.Text;
 using iText.Layout.Font;
 using iText.StyledXmlParser.Css.Util;
 
+using Range = iText.Layout.Font.Range;
+
 namespace iText.StyledXmlParser.Css {
     /// <summary>Class to store a CSS font face At rule.</summary>
     public class CssFontFaceRule : CssNestedAtRule {

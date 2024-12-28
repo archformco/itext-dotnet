@@ -6,10 +6,7 @@
     <WarningLevel>0</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
-  </PropertyGroup>
-  <PropertyGroup>
-    <OutputType>library</OutputType>
+    <TargetFramework>netstandard2.1</TargetFramework>
   </PropertyGroup>
   <PropertyGroup>
     <AssemblyOriginatorKeyFile>itext.snk</AssemblyOriginatorKeyFile>

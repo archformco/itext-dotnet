@@ -4,12 +4,7 @@
     <DelaySign>False</DelaySign>
     <DocumentationFile>$(TargetDir)bin\$(Configuration)\$(TargetFramework)\itext.io.xml</DocumentationFile>
     <WarningLevel>0</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup>
-    <TargetFrameworks>netstandard2.0;net461</TargetFrameworks>
-  </PropertyGroup>
-  <PropertyGroup>
-    <OutputType>library</OutputType>
+    <TargetFramework>netstandard2.1</TargetFramework>
   </PropertyGroup>
   <PropertyGroup>
     <AssemblyOriginatorKeyFile>itext.snk</AssemblyOriginatorKeyFile>
@@ -73,21 +68,34 @@
   <PropertyGroup>
     <NoWarn>1701;1702;1591;1570;1572;1573;1574;1580;1584;1658</NoWarn>
   </PropertyGroup>
-  <ItemGroup Condition=" '$(TargetFramework)' == 'net461' ">
-    <Reference Include="System" />
-    <Reference Include="System.Drawing" />
-  </ItemGroup>
-  <ItemGroup Condition=" '$(TargetFramework)' == 'netstandard2.0' ">
-    <PackageReference Include="System.Globalization.Extensions" Version="4.3.0" />
-    <PackageReference Include="System.Runtime.Loader" Version="4.3.0" />
-    <PackageReference Include="System.Diagnostics.Process" Version="4.3.0" />
-    <PackageReference Include="Microsoft.Extensions.DependencyModel" Version="1.1.0" />
-    <PackageReference Include="System.Text.Encoding.CodePages" Version="4.3.0" />
-	  <PackageReference Include="Microsoft.DotNet.PlatformAbstractions" Version="1.1.0" />
-	  <PackageReference Include="System.Xml.XmlDocument" Version="4.3.0" />
-	  <PackageReference Include="System.Text.RegularExpressions" Version="4.3.1" />
+<!--  <ItemGroup Condition=" '$(TargetFramework)' == 'net461' ">-->
+<!--    <Reference Include="System" />-->
+<!--    <Reference Include="System.Drawing" />-->
+<!--  </ItemGroup>-->
+<!--  <ItemGroup Condition=" '$(TargetFramework)' == 'netstandard2.0' ">-->
+<!--    <PackageReference Include="System.Globalization.Extensions" Version="4.3.0" />-->
+<!--    <PackageReference Include="System.Runtime.Loader" Version="4.3.0" />-->
+<!--    <PackageReference Include="System.Diagnostics.Process" Version="4.3.0" />-->
+<!--    <PackageReference Include="Microsoft.Extensions.DependencyModel" Version="1.1.0" />-->
+<!--    <PackageReference Include="System.Text.Encoding.CodePages" Version="4.3.0" />-->
+<!--	  <PackageReference Include="Microsoft.DotNet.PlatformAbstractions" Version="1.1.0" />-->
+<!--	  <PackageReference Include="System.Xml.XmlDocument" Version="4.3.0" />-->
+<!--	  <PackageReference Include="System.Text.RegularExpressions" Version="4.3.1" />-->
+<!--  </ItemGroup>-->
+  <ItemGroup Condition=" '$(TargetFramework)' == 'netstandard2.1' ">
+    <PackageReference Include="System.Globalization.Extensions" />
+    <PackageReference Include="System.Runtime.Loader"/>
+    <PackageReference Include="System.Diagnostics.Process"/>
+    <PackageReference Include="Microsoft.Extensions.DependencyModel"/>
+    <PackageReference Include="System.Text.Encoding.CodePages"/>
+    <PackageReference Include="Microsoft.DotNet.PlatformAbstractions"/>
+    <PackageReference Include="System.Xml.XmlDocument"/>
+    <PackageReference Include="System.Text.RegularExpressions"/>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\itext.commons\itext.commons.csproj" />
   </ItemGroup>
+<!--  <ItemGroup>-->
+<!--    <Reference Include="*.dll" />-->
+<!--  </ItemGroup>-->
 </Project>

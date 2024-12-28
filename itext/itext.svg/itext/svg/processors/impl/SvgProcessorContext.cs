@@ -29,6 +29,8 @@ using iText.StyledXmlParser.Resolver.Resource;
 using iText.Svg.Css;
 using iText.Svg.Processors;
 
+using Range = iText.Layout.Font.Range;
+
 namespace iText.Svg.Processors.Impl {
     /// <summary>Context class with accessors to properties/objects used in processing Svg documents</summary>
     public class SvgProcessorContext {

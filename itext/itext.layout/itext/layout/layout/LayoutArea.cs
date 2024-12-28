@@ -25,6 +25,8 @@ using iText.Commons.Utils;
 using iText.IO.Util;
 using iText.Kernel.Geom;
 
+using HashCode = iText.IO.Util.HashCode;
+
 namespace iText.Layout.Layout {
     /// <summary>
     /// Represents the area for content

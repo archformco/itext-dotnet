@@ -4,12 +4,7 @@
     <DelaySign>False</DelaySign>
     <RootNamespace />
     <DocumentationFile>$(TargetDir)bin\$(Configuration)\$(TargetFramework)\itext.svg.xml</DocumentationFile>
-  </PropertyGroup>
-  <PropertyGroup>
-    <TargetFrameworks>netstandard2.0;net461</TargetFrameworks>
-  </PropertyGroup>
-  <PropertyGroup>
-    <OutputType>library</OutputType>
+    <TargetFramework>netstandard2.1</TargetFramework>
   </PropertyGroup>
   <PropertyGroup>
     <AssemblyOriginatorKeyFile>itext.snk</AssemblyOriginatorKeyFile>
@@ -22,13 +17,13 @@
   <PropertyGroup>
     <NoWarn>1701;1702;1591;1570;1572;1573;1574;1580;1584;1658;0108</NoWarn>
   </PropertyGroup>
-  <ItemGroup Condition=" '$(TargetFramework)' == 'net461' ">
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Xml" />
-  </ItemGroup>
+<!--  <ItemGroup Condition=" '$(TargetFramework)' == 'net461' ">-->
+<!--    <Reference Include="System" />-->
+<!--    <Reference Include="System.Core" />-->
+<!--    <Reference Include="System.Xml.Linq" />-->
+<!--    <Reference Include="System.Data" />-->
+<!--    <Reference Include="System.Xml" />-->
+<!--  </ItemGroup>-->
   <ItemGroup>  
     <EmbeddedResource Include="resources\default.css">
       <LogicalName>iText.Svg.default.css</LogicalName>
